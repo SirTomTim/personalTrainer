@@ -5,6 +5,9 @@ import Traininglist from './components/Traininglist';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import {BrowserRouter,Routes,Route,Link} from 'react-router-dom';
+import CalendarPage from "./components/calendar";
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +20,7 @@ function App() {
 </AppBar>
       <Customerlist />
       <Traininglist />
+      <CalendarPage />
     </div>
   );
 }
